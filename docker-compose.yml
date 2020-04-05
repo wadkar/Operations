@@ -1,8 +1,10 @@
-version: '3'
+version: '3.7'
 
 services:
   postgres:
     image: postgis/postgis:12-2.5-alpine
+    volumes:
+      - pgdata:/var/lib/postgresql/data
   web:
     restart: always
     environment:
@@ -13,6 +15,7 @@ services:
       bash -c "python wait_for_postgres.py &&
                ./manage.py migrate &&
                ./manage.py runserver 0.0.0.0:8000"
+    # this is a relative mount and allows live development
     volumes:
       - ./:/code
     ports:
@@ -27,3 +30,8 @@ services:
       - ./:/code
     ports:
       - "8001:8001"
+
+# By default we create named volumes that'll reside in /var/lib/docker/volumes
+# If you know what you're doing, you can rm -rf this to start from scratch
+volumes:
+  pgdata:
