@@ -3,6 +3,8 @@ version: '3.7'
 services:
   postgres:
     image: postgis/postgis:12-2.5-alpine
+    environment:
+      POSTGRES_PASSWORD: change_postgres_password
     volumes:
       - pgdata:/var/lib/postgresql/data
   web:
