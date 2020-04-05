@@ -4,6 +4,8 @@ services:
   postgres:
     image: postgis/postgis:12-2.5-alpine
     environment:
+      POSTGRES_DB: change_postgres_db
+      POSTGRES_USER: change_postgres_user
       POSTGRES_PASSWORD: change_postgres_password
     volumes:
       - pgdata:/var/lib/postgresql/data
@@ -11,6 +13,7 @@ services:
     restart: always
     environment:
       - DJANGO_SECRET_KEY=local
+      - DATABSE_URL=postgres://$POSTGRES_USER:$POSTGRES_PASSWORD@postgres:5432/$POSTGRES_DB
     image: web
     build: ./
     command: >
