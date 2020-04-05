@@ -1,8 +1,8 @@
-site_name: staysafe
-site_description: StaySafe API for detecting Covid-19 Hotspots
-repo_url: https://github.com/wadkar/Operations
+site_name: api
+site_description: API for Covid-19 Hotspot detection and rapid response.
+repo_url: https://github.com/GoCorona-org/Operations-org
 site_dir: site
-copyright: Copyright &copy; 2019, <a href="https://github.com/wadkar">wadkar</a>.
+copyright: Copyright &copy; 2019, <a href="https://github.com/GoCorona-org">GoCorona-org</a>.
 dev_addr: 0.0.0.0:8001
 
 nav:

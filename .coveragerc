@@ -5,6 +5,6 @@ omit = *migrations*,
        *test*,
        *admin*,
        ./manage.py,
-       ./staysafe/config/*,
-       ./staysafe/wsgi.py,
+       ./api/config/*,
+       ./api/wsgi.py,
        *__init__*

@@ -1,9 +1,9 @@
-# Operations
+# Operations-org
 
-[![Build Status](https://travis-ci.org/wadkar/Operations.svg?branch=master)](https://travis-ci.org/wadkar/Operations)
+[![Build Status](https://travis-ci.org/GoCorona-org/Operations-org.svg?branch=master)](https://travis-ci.org/GoCorona-org/Operations-org)
 [![Built with](https://img.shields.io/badge/Built_with-Cookiecutter_Django_Rest-F7B633.svg)](https://github.com/agconti/cookiecutter-django-rest)
 
-StaySafe API for detecting Covid-19 Hotspots. Check out the project's [documentation](http://wadkar.github.io/Operations/).
+API for Covid-19 Hotspot detection and rapid response.. Check out the project's [documentation](http://GoCorona-org.github.io/Operations-org/).
 
 # Prerequisites
 
