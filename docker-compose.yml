@@ -4,9 +4,9 @@ services:
   postgres:
     image: postgis/postgis:12-2.5-alpine
     environment:
-      POSTGRES_DB: change_postgres_db
-      POSTGRES_USER: change_postgres_user
-      POSTGRES_PASSWORD: change_postgres_password
+      POSTGRES_DB: $POSTGRES_DB
+      POSTGRES_USER: $POSTGRES_USER
+      POSTGRES_PASSWORD: $POSTGRES_PASSWORD
     volumes:
       - pgdata:/var/lib/postgresql/data
   web:

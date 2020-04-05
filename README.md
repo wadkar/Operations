@@ -13,7 +13,7 @@ API for Covid-19 Hotspot detection and rapid response.. Check out the project's 
 
 Start the dev server for local development:
 ```bash
-docker-compose up
+cp .env.example .env && docker-compose up
 ```
 
 Run a command inside the docker container:
