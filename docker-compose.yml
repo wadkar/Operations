@@ -2,7 +2,7 @@ version: '2'
 
 services:
   postgres:
-    image: postgres:11.6
+    image: postgis/postgis:12-2.5-alpine
   web:
     restart: always
     environment:
