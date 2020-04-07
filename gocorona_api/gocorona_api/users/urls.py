@@ -17,7 +17,7 @@ urlpatterns = [
     path("~update/", view=user_update_view, name="update"),
     path("<str:username>/", view=user_detail_view, name="detail"),
 
-    path('<str:username>/geo/', views.CoronaAppList.as_view()),
-    path('<str:username>/geo/<int:pk>/', views.CoronaAppDetail.as_view()),
-    path('<str:username>/geo/result/', views.CoronaAppResult.as_view()),
+    path('<str:username>/geo/', CoronaAppList.as_view()),
+    path('<str:username>/geo/<int:pk>/', CoronaAppDetail.as_view()),
+    path('<str:username>/geo/result/', CoronaAppResult.as_view()),
 ]
