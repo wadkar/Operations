@@ -11,7 +11,7 @@ SECRET_KEY = env(
     default="6jRMte6oF4GAZq3acZRi1IwZGi1cSxKI2LfJPr23z6Yl9guIZiJrvl7bR25BNkt8",
 )
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1", "dev.gocorona.wadkar.net"]
+ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1", "*"]
 
 # CACHES
 # ------------------------------------------------------------------------------
