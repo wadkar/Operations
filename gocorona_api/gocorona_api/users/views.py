@@ -105,6 +105,7 @@ class CoronaAppResult(APIView):
         #res_intersect['UUID_2'],res_intersect['Status_2']
         #res_intersect.drop_duplicates(subset ="UUID",keep = "first", inplace = True)
         #res_intersect['Timeslot']=timestamp_string
+        res_intersect = res_intersect.drop(['geometry'], axis=1)
         return res_intersect
 
 
